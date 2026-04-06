@@ -1,0 +1,9 @@
+services:
+  sound-oss:
+    build: .
+    ports:
+      - "7860:7860"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    volumes:
+      - ./data:/app/data

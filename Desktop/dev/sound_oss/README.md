@@ -52,17 +52,47 @@ python main.py tts "こんにちは" --engine edge --voice-edge keita  # 男性
 python main.py dialogue "Taro: Hello\nHanako: Hi" -o chat.wav
 ```
 
+### バッチ処理
+
+```bash
+# フォルダ内の全音声を一括書き起こし
+python batch.py asr ./audio_files/ -o results.json
+
+# CSV出力
+python batch.py asr ./audio_files/ -o results.csv --format csv
+
+# テキストファイルから一括音声合成 (1行=1音声)
+python batch.py tts sentences.txt -o ./output_audio/
+
+# Edge TTSで一括合成 (APIキー不要)
+python batch.py tts sentences.txt -o ./output_audio/ --engine edge
+
+# 一括翻訳 (日本語→英語)
+python batch.py translate ./audio_files/ -o translations.json
+```
+
+### Docker
+
+```bash
+export GOOGLE_API_KEY="your-api-key"
+docker compose up --build
+# ブラウザで http://localhost:7860 を開く
+```
+
 ## ファイル構成
 
 ```
 sound_oss/
-├── app.py            # Gradio Web UI
-├── main.py           # CLI エントリポイント
-├── gemma4_api.py     # ASR - Gemini API 経由
-├── gemma4_local.py   # ASR - Gemma 4 ローカル推論 (GPU用)
-├── tts_gemini.py     # TTS - Gemini 2.5 Flash TTS
-├── tts_edge.py       # TTS - Edge TTS (無料)
-└── requirements.txt
+├── app.py              # Gradio Web UI
+├── main.py             # CLI エントリポイント
+├── batch.py            # バッチ処理 (一括ASR/TTS)
+├── gemma4_api.py       # ASR - Gemini API 経由
+├── gemma4_local.py     # ASR - Gemma 4 ローカル推論 (GPU用)
+├── tts_gemini.py       # TTS - Gemini 2.5 Flash TTS
+├── tts_edge.py         # TTS - Edge TTS (無料)
+├── requirements.txt
+├── Dockerfile
+└── docker-compose.yml
 ```
 
 ## Gemini TTS 利用可能な声

@@ -6,3 +6,5 @@ __pycache__/
 *.mp3
 *.aiff
 .playwright-mcp/
+data/
+output_audio/
