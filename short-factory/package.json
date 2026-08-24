@@ -1,0 +1,26 @@
+{
+  "name": "short-factory",
+  "version": "1.0.0",
+  "description": "LM Studio x Qwen 60s short video pipeline (Remotion)",
+  "main": "index.js",
+  "scripts": {
+    "render": "remotion render src/index.ts Short out/short_preview.mp4",
+    "still": "remotion still src/index.ts Short",
+    "timing": "node scripts/estimate_timing.mjs",
+    "lint": "node scripts/lint_reading.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/noto-sans-jp": "^5.3.0",
+    "@remotion/cli": "^4.0.516",
+    "@remotion/renderer": "^4.0.516",
+    "@types/react": "^18.3.31",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.516",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}
