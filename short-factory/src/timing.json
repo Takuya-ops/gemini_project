@@ -1,0 +1,90 @@
+{
+  "fps": 30,
+  "cues": [
+    {
+      "id": "c01",
+      "startFrame": 0,
+      "durationFrames": 191,
+      "estimated": true
+    },
+    {
+      "id": "c02",
+      "startFrame": 191,
+      "durationFrames": 67,
+      "estimated": true
+    },
+    {
+      "id": "c03",
+      "startFrame": 258,
+      "durationFrames": 147,
+      "estimated": true
+    },
+    {
+      "id": "c04",
+      "startFrame": 405,
+      "durationFrames": 159,
+      "estimated": true
+    },
+    {
+      "id": "c05",
+      "startFrame": 564,
+      "durationFrames": 99,
+      "estimated": true
+    },
+    {
+      "id": "c06",
+      "startFrame": 663,
+      "durationFrames": 139,
+      "estimated": true
+    },
+    {
+      "id": "c07",
+      "startFrame": 802,
+      "durationFrames": 55,
+      "estimated": true
+    },
+    {
+      "id": "c08",
+      "startFrame": 857,
+      "durationFrames": 115,
+      "estimated": true
+    },
+    {
+      "id": "c09",
+      "startFrame": 972,
+      "durationFrames": 131,
+      "estimated": true
+    },
+    {
+      "id": "c10",
+      "startFrame": 1103,
+      "durationFrames": 135,
+      "estimated": true
+    },
+    {
+      "id": "c11",
+      "startFrame": 1238,
+      "durationFrames": 147,
+      "estimated": true
+    },
+    {
+      "id": "c12",
+      "startFrame": 1385,
+      "durationFrames": 123,
+      "estimated": true
+    },
+    {
+      "id": "c13",
+      "startFrame": 1508,
+      "durationFrames": 95,
+      "estimated": true
+    },
+    {
+      "id": "c14",
+      "startFrame": 1603,
+      "durationFrames": 91,
+      "estimated": true
+    }
+  ],
+  "speechEndFrame": 1694
+}

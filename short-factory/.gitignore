@@ -1,0 +1,6 @@
+node_modules/
+out/
+assets/.fal_key
+assets/reference_voice.*
+public/voice.mp3
+.DS_Store
