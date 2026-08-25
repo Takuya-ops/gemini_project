@@ -15,7 +15,13 @@ Remotion製。**プレビュー版(仮ビジュアル+推定タイミング・�
 
 ## ブロッカー: ネットワーク
 
-このセッションの環境は GitHub とパッケージレジストリ以外への接続がすべて遮断されている
+**2026-08-25 のセッションで再開を試行**: ブランチ `claude/gemini-video-production-dcdfiq` に移植し、
+`npm install`・読み事故リント・プレビューレンダ(`npm run render`)の再現をこの環境で確認済み。
+ただしネットワークは前回と同じくポリシーで遮断されており(fal.run / queue.fal.run /
+rest.alpha.fal.ai / www.youtube.com への CONNECT がゲートウェイ 403)、TTS・Bロールは未実施のまま。
+falのAPIキーはユーザーから提供済み(gitには入れない。再開時に再依頼して `assets/.fal_key` へ)。
+
+前回セッションの環境も GitHub とパッケージレジストリ以外への接続がすべて遮断されていた
 (fal.run / queue.fal.run / rest.alpha.fal.ai / youtube.com すべて 403)。
 再開するセッションでは以下に接続できる必要がある:
 
